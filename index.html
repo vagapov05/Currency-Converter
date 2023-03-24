@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Currency Converter</title>
+      <link rel="stylesheet" href="./main.css">
+   </head>
+   <body>
+      <div class="container">
+         <h1>Currency Converter</h1>
+
+         <div class="currency-container">
+            <select id="currency-first">
+               <option value="EUR">EUR</option>
+               <option value="USD" selected>USD</option>
+               <option value="KRW">KRW</option>
+               <option value="RUB">RUB</option>
+               <option value="UZS">UZS</option>
+            </select>
+
+            <input id="worth-first" type="number" value="1" min="0">
+         </div>
+
+         <div class="currency-container">
+            <select id="currency-second">
+               <option value="EUR">EUR</option>
+               <option value="USD">USD</option>
+               <option value="KRW">KRW</option>
+               <option value="RUB" selected>RUB</option>
+               <option value="UZS">UZS</option>
+            </select>
+
+            <input id="worth-second" type="number" disabled>
+         </div>
+
+         <p class="exchange-rate" id="exchange-rate"></p>
+      </div>
+      
+
+      <script src="./main.js"></script>
+   </body>
+</html>
